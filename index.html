@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product preview card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:rgb(248, 227, 230);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+
+        }
+        .card-container{
+            display: flex;
+            flex-direction: row;
+             background-color: white;
+             flex-wrap: nowrap;
+             width:550px;
+            height:450px; 
+            border-radius:14px;
+           
+
+            border: 1px solid black hidden;
+
+        }
+        .product{
+            width:275px;
+            height:450px;
+            border-radius:14px 0px 0px 14px;
+            
+            height:100%; 
+            border:1px solid black hidden;
+        }
+        .product-photo{
+            width:50%;
+            height:450px;
+            border:1px solid black hidden;
+        }
+        .product-description{
+            width:275px;
+            font-family: "Montserrat", sans-serif;
+            border:1px solid black hidden;
+            padding:22px; 
+        }
+        p{
+            letter-spacing: 5px;
+            font-weight:0;
+            color: rgb(116, 114, 114);
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .heading{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 100;
+            line-height: 30px;
+            font-size: 14px;
+            color: rgb(34, 34, 34);
+        }
+        .para{
+            color: rgb(116, 114, 114);
+            line-height: 21px;
+            font-size: 14px;
+            font-weight: 300;
+           
+        }
+        .cost{
+            border:1px solid black hidden;
+            text-align: left;
+            margin:28px 5px ;
+          margin-left:-32px; 
+            font-family: "Montserrat", sans-serif;
+            font-size:34px;  
+            text-align: center;
+        
+            font-weight:900px;
+           color:hsl(158, 36%, 37%);
+        }
+       span{
+        
+            text-decoration: line-through;
+            font-size:medium;
+            margin-left:8px;
+           
+        }
+        button{
+            padding:12px 45px;
+            background-color:hsl(158, 36%, 37%);
+            border-radius:10px;
+            color:white;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            width: 100%;
+            margin: 5px 0px;
+            border:none;
+        }
+        button img{
+            margin-right:2px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }
+        button:hover,a:hover{
+            cursor:pointer;
+            
+        }
+    
+       
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+         <div class="product-photo"> <img class="product" src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De perfume "></div>
+        <div class="product-description">
+            <p>PERFUME</p>
+            <div class="heading"><h1>Gabrielle Essence Eau De Parfum</h1> </div>
+            <div class="para">A floral, solar and voloptuous interpretation composed by Olivier Polge, perfumer creator for the House of CHANEL</div>
+        
+        <div class="cost"> $149.99 <span> $619.99</span> </div>
+        <button><img src="images/icon-cart.svg" alt="cart">  <a href="#"> Add to cart </a></button>
+    </div>
+    </div>
+    
+</body>
+</html>
